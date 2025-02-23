@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <form id="task-form">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="Add a new task..."
+                    required
+                >
+                <button type="submit" class="add-btn">Add Task</button>
+            </form>
+        </header>
+
+        <div class="tasks-container">
+            <div class="tasks-header">
+                <h2>Your Tasks</h2>
+                <div class="task-count">
+                    <span id="total-tasks">0</span> tasks
+                </div>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
